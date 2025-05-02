@@ -1,6 +1,6 @@
 import React from "react";
 
-function LightThemeIcon() {
+function MoonIcon() {
   return (
     <svg
       width="28"
@@ -18,4 +18,4 @@ function LightThemeIcon() {
   );
 }
 
-export default LightThemeIcon;
+export default MoonIcon;

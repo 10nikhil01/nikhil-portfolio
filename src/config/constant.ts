@@ -1,0 +1,1 @@
+export const NEXT_APP_ENVIRONMENT = process.env.NEXT_APP_ENVIRONMENT;

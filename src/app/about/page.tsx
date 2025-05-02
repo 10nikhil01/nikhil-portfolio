@@ -1,7 +1,5 @@
 function page() {
-  return (
-    <main className="flex items-center justify-center h-dvh">About Page</main>
-  );
+  return <main className="flex h-dvh items-center justify-center">About Page</main>;
 }
 
 export default page;

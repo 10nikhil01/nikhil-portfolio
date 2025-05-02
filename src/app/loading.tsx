@@ -1,6 +1,6 @@
 function loading() {
   return (
-    <div className="flex items-center justify-center size-10 border-4 border-b-transparent rounded-full animate-spin border-foreground/70 shadow-none bg-background" />
+    <div className="flex size-10 animate-spin items-center justify-center rounded-full border-4 border-foreground/70 border-b-transparent bg-background shadow-none" />
   );
 }
 

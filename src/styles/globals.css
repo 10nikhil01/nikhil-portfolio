@@ -574,4 +574,5 @@ body {
   -moz-osx-font-smoothing: grayscale; /* Firefox on macOS */
   text-rendering: optimizeLegibility; /* Suggests to the browser to optimize text rendering for legibility */
 }
-@layer utilities {}
+@layer utilities {
+}

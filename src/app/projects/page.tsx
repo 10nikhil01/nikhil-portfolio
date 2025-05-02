@@ -1,9 +1,5 @@
 function page() {
-  return (
-    <main className="flex items-center justify-center h-dvh">
-      Projects Page
-    </main>
-  );
+  return <main className="flex h-dvh items-center justify-center">Projects Page</main>;
 }
 
 export default page;

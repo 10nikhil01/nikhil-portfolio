@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 
@@ -15,14 +15,14 @@ export default function NotFound() {
   }, [router]);
 
   return (
-    <main className="flex h-screen flex-col items-center justify-center bg-background text-foreground px-4 text-center">
-      <h1 className="text-2xl font-bold mb-2">Oops! Page Not Found</h1>
-      <p className="text-muted-foreground mb-4">
-        You'll be redirected automatically. If not,{" "}
+    <main className="flex h-screen flex-col items-center justify-center bg-background px-4 text-center text-foreground">
+      <h1 className="mb-2 text-2xl font-bold">Oops! Page Not Found</h1>
+      <p className="mb-4 text-muted-foreground">
+        You&apos;ll be redirected automatically. If not,{" "}
         <Button
           variant={"link"}
           onClick={() => router.back()}
-          className="text-blue-500 underline m-0 p-0 hover:text-blue-600"
+          className="m-0 p-0 text-blue-500 underline hover:text-blue-600"
         >
           click here
         </Button>

@@ -6,7 +6,7 @@
 .pnp.js
 /.vscode
 .yarn/install-state.gz
-
+.env
 # testing
 /coverage
 

@@ -3,9 +3,9 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 
 export default function Home() {
   return (
-    <main className="bg-background">
+    <main className="bg-background h-dvh flex items-center justify-center">
       <ThemeToggle />
-      <h1 className="text-foreground">HomePage</h1>
-      </main>
+      <h1 className="text-foreground">Home Page</h1>
+    </main>
   );
 }

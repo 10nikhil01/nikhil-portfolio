@@ -8,7 +8,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Nikhil | Portfolio",
-  description: "I'm Nikhil Kumar, a frontend developer specializing in building fast, accessible, and SEO-friendly web applications using React, Next.js, and modern web technologies.",
+  description:
+    "I'm Nikhil Kumar, a frontend developer specializing in building fast, accessible, and SEO-friendly web applications using React, Next.js, and modern web technologies.",
   metadataBase: new URL(getSiteUrl()),
   applicationName: "NikPortfolio",
   generator: "Next.js",
@@ -25,9 +26,7 @@ export const metadata: Metadata = {
     "UI Developer",
   ],
   referrer: "origin-when-cross-origin",
-  authors: [
-    { name: "Nikhil Kumar", url: getSiteUrl() },
-  ],
+  authors: [{ name: "Nikhil Kumar", url: getSiteUrl() }],
   creator: "Nikhil Kumar",
   publisher: "Nik",
   // colorScheme: "light", // or "dark" or "only light/dark"
@@ -62,7 +61,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Nikhil | Developer",
-    description: "2 years of experience in building scalable, high-performance, and SEO-optimized web applications.",
+    description:
+      "2 years of experience in building scalable, high-performance, and SEO-optimized web applications.",
     url: getSiteUrl(),
     siteName: "nikhil portfolio",
     // images: [
@@ -77,9 +77,10 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
-    card: "summary_large_image", 
+    card: "summary_large_image",
     title: "Nikhil | Developer",
-    description: "2 years of experience in building scalable, high-performance, and SEO-optimized web applications.",
+    description:
+      "2 years of experience in building scalable, high-performance, and SEO-optimized web applications.",
     site: "@site_handle",
     creator: "@creator_handle",
     // images: [`${getSiteUrl()}/twitter-image`],

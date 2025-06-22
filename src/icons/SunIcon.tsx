@@ -3,9 +3,9 @@ import React from "react";
 function SunIcon() {
   return (
     <svg
-      width="24"
-      height="24"
-      className="absolute size-[1.2rem] scale-0 transition-all duration-200 dark:scale-100 dark:fill-yellow-500 dark:stroke-yellow-500"
+      width="22"
+      height="22"
+      className="absolute scale-0 dark:scale-100 dark:fill-yellow-500 dark:stroke-yellow-500"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

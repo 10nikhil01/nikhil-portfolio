@@ -1,9 +1,11 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "@/styles/globals.css";
+import Footer from "@/components/common/footer";
+import Header from "@/components/common/header";
 import Providers from "@/providers";
+import "@/styles/globals.css";
 import { getSiteUrl } from "@/utils/getSiteURL";
 import { Analytics } from "@vercel/analytics/react";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -128,7 +130,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <Analytics />
         <Providers>
+          <Header />
           <div>{children}</div>
+          <Footer />
         </Providers>
       </body>
     </html>

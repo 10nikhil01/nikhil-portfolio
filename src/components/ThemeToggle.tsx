@@ -3,8 +3,9 @@ import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import SunIcon from "@/icons/SunIcon";
 import MoonIcon from "@/icons/MoonIcon";
+import { cn } from "@/lib/utils";
 
-export function ThemeToggle() {
+export function ThemeToggle({ className }: { className?: string }) {
   const { theme, setTheme } = useTheme();
   const toggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
@@ -15,7 +16,10 @@ export function ThemeToggle() {
       variant={"default"}
       size={"icon"}
       onClick={toggleTheme}
-      className={`size-5 border-none bg-background p-0 text-foreground shadow-none hover:bg-background focus-visible:ring-0`}
+      className={cn(
+        "size-12 border-none bg-background p-0 text-foreground shadow-none hover:bg-background focus-visible:ring-0",
+        className
+      )}
     >
       <SunIcon />
       <MoonIcon />

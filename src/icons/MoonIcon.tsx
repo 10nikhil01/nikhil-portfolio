@@ -3,10 +3,10 @@ import React from "react";
 function MoonIcon() {
   return (
     <svg
-      width="28"
-      height="28"
+      width="22"
+      height="22"
       viewBox="0 0 24 24"
-      className="size-[1.2rem] rotate-0 scale-100 transition-all duration-200 hover:rotate-[-90deg] dark:rotate-0 dark:scale-0"
+      className="scale-100 dark:scale-0"
       fill="#1E293B"
       xmlns="http://www.w3.org/2000/svg"
     >

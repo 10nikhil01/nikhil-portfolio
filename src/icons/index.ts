@@ -1,2 +1,4 @@
-export * from "@/icons/MoonIcon";
-export * from "@/icons/SunIcon";
+export * from "@/icons/Linkedin";
+export * from "@/icons/Menu";
+export * from "@/icons/Moon";
+export * from "@/icons/Sun";

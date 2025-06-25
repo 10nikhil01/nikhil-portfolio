@@ -1,6 +1,6 @@
 import React from "react";
 
-function SunIcon() {
+function Sun() {
   return (
     <svg
       width="22"
@@ -19,4 +19,4 @@ function SunIcon() {
   );
 }
 
-export default SunIcon;
+export default Sun;

@@ -1,6 +1,6 @@
 import React from "react";
 
-function MoonIcon() {
+function Moon() {
   return (
     <svg
       width="22"
@@ -18,4 +18,4 @@ function MoonIcon() {
   );
 }
 
-export default MoonIcon;
+export default Moon;

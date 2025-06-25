@@ -1,4 +1,4 @@
-export function MenuIcon({ color }: { color?: string }) {
+export function Menu({ color }: { color?: string }) {
   return (
     <svg className="size-6" fill={color ?? "currentcolor"} viewBox="0 0 16 16">
       <path

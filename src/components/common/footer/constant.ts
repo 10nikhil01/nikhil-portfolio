@@ -32,6 +32,6 @@ export type FooterLinkItem = {
 };
 
 export const FooterLinks: FooterLinkItem[] = [
-  { href: "", label: "Privacy Policy" },
+  { href: "/privacy", label: "Privacy Policy" },
   { href: "/sitemap.xml", label: "Sitemap" },
 ];

@@ -11,7 +11,7 @@ import {
   DrawerHeader,
   DrawerTrigger,
 } from "@/components/ui/drawer";
-import { MenuIcon } from "@/icons/MenuIcon";
+import { Menu } from "@/icons/Menu";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -22,7 +22,7 @@ function MenuDrawer() {
     <Drawer>
       <DrawerTrigger className="ml-auto" asChild>
         <Button variant="outline" size={"icon"}>
-          <MenuIcon />
+          <Menu />
         </Button>
       </DrawerTrigger>
       <DrawerContent>

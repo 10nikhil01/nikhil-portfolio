@@ -7,7 +7,9 @@ export default function SkillSection() {
       id="skills"
       className="mx-auto flex max-w-3xl flex-col items-center justify-center gap-6 px-0 py-12 text-center max-sm:font-mono md:px-6"
     >
-      <h2 className="mb-6 text-2xl md:text-4xl font-bold text-foreground">🧰 Skills & Technologies</h2>
+      <h2 className="mb-6 text-2xl font-bold text-foreground md:text-4xl">
+        🧰 Skills & Technologies
+      </h2>
 
       <div className="grid w-full grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4">
         {skills.map((skill: skill) => (

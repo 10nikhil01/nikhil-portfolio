@@ -1,4 +1,4 @@
-import Github from "@/icons/Github";
+import { Github } from "@/icons/Github";
 import Linkedin from "@/icons/Linkedin";
 import Mail from "@/icons/Mail";
 

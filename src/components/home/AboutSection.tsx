@@ -8,7 +8,7 @@ function AboutSection() {
       className="mx-auto flex max-w-3xl flex-col items-center justify-center gap-6 px-0 py-12 text-center max-sm:font-mono md:px-6"
     >
       <Avatar aria-label="avatar on about section" />
-      <h2 className="text-2xl font-extrabold md:text-3xl">ABOUT ME </h2>
+      <h2 className="mb-6 text-2xl font-bold text-foreground md:text-4xl">ABOUT ME </h2>
       <p className="text-lg text-muted-foreground">
         👋 I&apos;m <span className="font-semibold">Nikhil Kumar</span> — a{" "}
         <span className="font-semibold">MERN Stack Developer</span> with{" "}

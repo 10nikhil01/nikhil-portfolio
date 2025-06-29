@@ -1,3 +1,4 @@
+"use client";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { type MidMenuItem, MidMenus } from "@/components/common/header/constant";
 
@@ -20,7 +21,7 @@ function MenuDrawer() {
 
   return (
     <Drawer>
-      <DrawerTrigger className="ml-auto" asChild>
+      <DrawerTrigger className="ml-auto sm:hidden" asChild>
         <Button variant="outline" size={"icon"}>
           <Menu />
         </Button>

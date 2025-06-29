@@ -1,3 +1,4 @@
+"use client";
 import { MidMenus, type MidMenuItem } from "@/components/common/header/constant";
 import { cn } from "@/lib/utils";
 import Link from "next/link";

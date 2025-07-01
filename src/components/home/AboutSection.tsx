@@ -22,10 +22,10 @@ export default function AboutSection() {
 
       {/* Heading slides from top */}
       <motion.h2
-        className="mb-6 text-2xl font-bold text-foreground md:text-4xl"
-        initial={{ y: 40, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.1 }}
+        className="mb-6 text-3xl font-bold text-foreground md:text-4xl"
+        initial={{ y: 40, opacity: 0, scale: 0.8 }}
+        whileInView={{ y: 0, opacity: 1, scale: 1 }}
+        transition={{ type: "spring", duration: 0.5, delay: 0.1, damping: 10 }}
         viewport={{ once: false }}
       >
         ABOUT ME
@@ -40,9 +40,9 @@ export default function AboutSection() {
         <motion.p
           key={index}
           className="text-left text-lg text-muted-foreground"
-          initial={{ x: -50, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.2 + index * 0.2, duration: 0.5 }}
+          initial={{ y: 50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5 }}
           viewport={{ once: false }}
         >
           {text}
@@ -51,20 +51,21 @@ export default function AboutSection() {
 
       {/* Button with scale/fade */}
       <motion.div
-        initial={{ opacity: 0, y: 20, scale: 0.95 }}
+        initial={{ opacity: 0, y: 20, scale: 0.6 }}
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         transition={{
           type: "spring",
-          stiffness: 25,
-          damping: 15,
+          stiffness: 200,
+          damping: 10,
         }}
         viewport={{ once: false }}
+        className="mt-5"
       >
         <Link
           href="/about"
           rel="noopener noreferrer"
           aria-label="about page"
-          className="my-0 rounded-full bg-amber-500 px-3 py-2 text-sm text-white transition-all duration-300 hover:scale-105"
+          className="rounded-full bg-amber-500 px-4 py-3 text-md text-white transition-all duration-300 hover:scale-105"
         >
           Read more
         </Link>

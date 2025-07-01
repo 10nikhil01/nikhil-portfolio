@@ -13,9 +13,9 @@ export default function SkillSection() {
     >
       <motion.h2
         className="mb-6 text-2xl font-bold text-foreground md:text-4xl"
-        initial={{ y: 30, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5 }}
+        initial={{ y: 40, opacity: 0, scale: 0.8 }}
+        whileInView={{ y: 0, opacity: 1, scale: 1 }}
+        transition={{ type: "spring", duration: 0.5, delay: 0.1, damping: 10 }}
         viewport={{ once: false }}
       >
         🧰 Skills & Technologies

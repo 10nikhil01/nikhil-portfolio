@@ -64,7 +64,7 @@ export default function AboutSection() {
         <Link
           href="/about"
           rel="noopener noreferrer"
-          aria-label="about page"
+          aria-label="Learn more about Nikhil Kumar – MERN Developer"
           className="rounded-full bg-amber-500 px-4 py-3 text-white transition-all duration-300 hover:scale-105"
         >
           Read more

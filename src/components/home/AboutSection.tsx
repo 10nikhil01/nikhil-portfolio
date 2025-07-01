@@ -1,45 +1,74 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Avatar from "@/icons/Avatar";
 import Link from "next/link";
 
-function AboutSection() {
+export default function AboutSection() {
   return (
     <section
       id="about"
       className="mx-auto flex max-w-3xl flex-col items-center justify-center gap-6 px-0 py-12 text-center max-sm:font-mono md:px-6"
     >
-      <Avatar aria-label="avatar on about section" />
-      <h2 className="mb-6 text-2xl font-bold text-foreground md:text-4xl">ABOUT ME </h2>
-      <p className="text-lg text-muted-foreground">
-        👋 I&apos;m <span className="font-semibold">Nikhil Kumar</span> — a{" "}
-        <span className="font-semibold">MERN Stack Developer</span> with{" "}
-        <span className="font-semibold">2.5 years of experience</span>, currently working at{" "}
-        <span className="font-semibold">Purecode AI</span>.
-      </p>
-      <p className="text-lg text-muted-foreground">
-        While I work across the full stack (MongoDB, Express.js, React.js, Node.js), my strength
-        lies in building high-performance frontend applications using{" "}
-        <span className="font-semibold">React.js, Next.js, TypeScript</span>, and{" "}
-        <span className="font-semibold">Tailwind CSS</span>.
-      </p>
-      <p className="mb-6 text-lg text-muted-foreground">
-        I specialize in crafting fast, accessible, and{" "}
-        <span className="font-semibold">SEO-optimized web experiences</span> — improving Core Web
-        Vitals, leveraging SSR/ISR, and ensuring strong search engine visibility through{" "}
-        <span className="font-semibold">technical SEO strategies</span>. My work has helped drive
-        significant improvements in <span className="font-semibold">organic traffic</span>,{" "}
-        <span className="font-semibold">page load performance</span>, and{" "}
-        <span className="font-semibold">user engagement</span>.
-      </p>
-      <Link
-        href="/about"
-        rel="noopener noreferrer"
-        aria-label="about page"
-        className="my-0 rounded-full bg-amber-500 px-3 py-2 text-sm text-white transition-all duration-300 hover:scale-105"
+      {/* Avatar with pop-in effect */}
+      <motion.div
+        initial={{ y: 40, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        viewport={{ once: false }}
       >
-        Read more
-      </Link>
+        <Avatar aria-label="avatar on about section" />
+      </motion.div>
+
+      {/* Heading slides from top */}
+      <motion.h2
+        className="mb-6 text-2xl font-bold text-foreground md:text-4xl"
+        initial={{ y: 40, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        viewport={{ once: false }}
+      >
+        ABOUT ME
+      </motion.h2>
+
+      {/* Paragraphs slide from left */}
+      {[
+        `👋 I'm Nikhil Kumar — a MERN Stack Developer with 2.5 years of experience, currently working at Purecode AI.`,
+        `While I work across the full stack (MongoDB, Express.js, React.js, Node.js), my strength lies in building high-performance frontend applications using React.js, Next.js, TypeScript, and Tailwind CSS.`,
+        `I specialize in crafting fast, accessible, and SEO-optimized web experiences — improving Core Web Vitals, leveraging SSR/ISR, and ensuring strong search engine visibility through technical SEO strategies. My work has helped drive significant improvements in organic traffic, page load performance, and user engagement.`,
+      ].map((text, index) => (
+        <motion.p
+          key={index}
+          className="text-left text-lg text-muted-foreground"
+          initial={{ x: -50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.2 + index * 0.2, duration: 0.5 }}
+          viewport={{ once: false }}
+        >
+          {text}
+        </motion.p>
+      ))}
+
+      {/* Button with scale/fade */}
+      <motion.div
+        initial={{ opacity: 0, y: 20, scale: 0.95 }}
+        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+        transition={{
+          type: "spring",
+          stiffness: 25,
+          damping: 15,
+        }}
+        viewport={{ once: false }}
+      >
+        <Link
+          href="/about"
+          rel="noopener noreferrer"
+          aria-label="about page"
+          className="my-0 rounded-full bg-amber-500 px-3 py-2 text-sm text-white transition-all duration-300 hover:scale-105"
+        >
+          Read more
+        </Link>
+      </motion.div>
     </section>
   );
 }
-
-export default AboutSection;

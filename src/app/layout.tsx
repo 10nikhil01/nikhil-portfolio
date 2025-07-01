@@ -1,5 +1,6 @@
 import Footer from "@/components/common/footer";
 import Header from "@/components/common/header";
+import ScrollProgressBar from "@/components/common/ScrollProgressBar";
 import Providers from "@/providers";
 import "@/styles/globals.css";
 import { getSiteUrl } from "@/utils/getSiteURL";
@@ -131,6 +132,7 @@ export default function RootLayout({
         <Analytics />
         <Providers>
           <Header />
+          <ScrollProgressBar />
           <div>{children}</div>
           <Footer />
         </Providers>

@@ -65,7 +65,7 @@ export default function AboutSection() {
           href="/about"
           rel="noopener noreferrer"
           aria-label="about page"
-          className="rounded-full bg-amber-500 px-4 py-3 text-md text-white transition-all duration-300 hover:scale-105"
+          className="rounded-full bg-amber-500 px-4 py-3 text-white transition-all duration-300 hover:scale-105"
         >
           Read more
         </Link>

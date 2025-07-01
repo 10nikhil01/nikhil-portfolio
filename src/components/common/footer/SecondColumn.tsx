@@ -8,8 +8,8 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 function SecondColumn() {
-    const isLargeScreen = useMediaQuery("(min-width: 640px)");
-  
+  const isLargeScreen = useMediaQuery("(min-width: 640px)");
+
   return (
     <motion.div
       initial={isLargeScreen ? { x: 0, opacity: 0 } : { x: -40, opacity: 0 }}

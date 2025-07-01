@@ -1,3 +1,4 @@
+import DeploymentChecker from "@/components/common/DeploymentChecker";
 import Footer from "@/components/common/footer";
 import Header from "@/components/common/header";
 import ScrollProgressBar from "@/components/common/ScrollProgressBar";
@@ -131,6 +132,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Analytics />
         <Providers>
+          <DeploymentChecker />
           <Header />
           <ScrollProgressBar />
           <div>{children}</div>

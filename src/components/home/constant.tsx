@@ -73,8 +73,7 @@ export const projects: Project[] = [
     link: "https://nikhil-portfolio-webdev.vercel.app",
     description:
       "A modern, SEO-optimized developer portfolio built using Next.js, Tailwind CSS, and Framer Motion with high Lighthouse scores.",
-    image:
-      "/projects/Portfolio.png",
+    image: "/projects/Portfolio.png",
   },
   {
     title: "Crypto Classic",

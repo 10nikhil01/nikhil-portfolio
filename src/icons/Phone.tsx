@@ -1,7 +1,7 @@
 import type { IconProps } from "@/types";
 import React from "react";
 
-function Linkedin({ height = 35, width = 35, className }: IconProps) {
+function Phone({ height = 35, width = 35, className }: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -15,11 +15,9 @@ function Linkedin({ height = 35, width = 35, className }: IconProps) {
       stroke-linecap="round"
       stroke-linejoin="round"
     >
-      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-      <rect width="4" height="12" x="2" y="9"></rect>
-      <circle cx="4" cy="4" r="2"></circle>
+      <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
     </svg>
   );
 }
 
-export default Linkedin;
+export default Phone;

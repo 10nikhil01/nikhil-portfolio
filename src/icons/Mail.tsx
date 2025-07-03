@@ -1,13 +1,15 @@
+import type { IconProps } from "@/types";
 import React from "react";
 
-function Mail() {
+function Mail({ height = 35, width = 35, className }: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
+      className={className}
       stroke="currentColor"
       stroke-width="2"
       stroke-linecap="round"

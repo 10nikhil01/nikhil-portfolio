@@ -1,5 +1,5 @@
 "use client";
-import { type skill, skills } from "@/components/home/constant";
+import { type skill, skills, SkillsHeading } from "@/components/home/constant";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "framer-motion";
 
@@ -9,7 +9,7 @@ export default function SkillSection() {
   return (
     <section
       id="skills"
-      className="mx-auto flex max-w-3xl flex-col items-center justify-center gap-6 px-0 py-12 text-center max-sm:font-mono md:px-6"
+      className="mx-auto flex max-w-3xl flex-col items-center justify-center gap-6 px-0 py-12 text-center md:px-6"
     >
       <motion.h2
         className="mb-6 text-2xl font-bold text-foreground md:text-4xl"
@@ -18,7 +18,7 @@ export default function SkillSection() {
         transition={{ type: "spring", duration: 0.5, delay: 0.1, damping: 10 }}
         viewport={{ once: false }}
       >
-        🧰 Skills & Technologies
+        {SkillsHeading}
       </motion.h2>
 
       <div className="grid w-full grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4">

@@ -11,7 +11,7 @@ export default function ScrollProgressBar() {
   });
   return (
     <motion.div
-      className="fixed inset-x-0 top-0 z-[9999] h-1 origin-left rounded-full bg-gradient-to-r from-amber-400 via-orange-500 to-pink-500"
+      className="fixed inset-x-0 top-0 z-[9999] h-1 origin-left rounded-full bg-primaryGradient"
       style={{ scaleX }}
     />
   );

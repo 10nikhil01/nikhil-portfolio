@@ -1,9 +1,41 @@
-function loading() {
+"use client";
+
+import type { Variants } from "framer-motion";
+import { motion } from "framer-motion";
+
+function Loading() {
+  const dotVariants: Variants = {
+    jump: {
+      y: -30,
+      transition: {
+        duration: 0.8,
+        repeat: Infinity,
+        repeatType: "mirror",
+        ease: "easeInOut",
+      },
+    },
+  };
+
   return (
-    <div className="flex h-[calc(100dvh-64px)] w-full items-center justify-center bg-background">
-      <div className="size-10 animate-spin rounded-full border-4 border-foreground/70 border-b-transparent" />
-    </div>
+    <motion.div
+      animate="jump"
+      transition={{ staggerChildren: -0.2, staggerDirection: -1 }}
+      className="flex h-dvh items-center justify-center gap-3"
+    >
+      <motion.div
+        className="size-5 rounded-[50%] bg-primaryGradient will-change-transform"
+        variants={dotVariants}
+      />
+      <motion.div
+        className="size-5 rounded-[50%] bg-primaryGradient will-change-transform"
+        variants={dotVariants}
+      />
+      <motion.div
+        className="size-5 rounded-[50%] bg-primaryGradient will-change-transform"
+        variants={dotVariants}
+      />
+    </motion.div>
   );
 }
 
-export default loading;
+export default Loading;

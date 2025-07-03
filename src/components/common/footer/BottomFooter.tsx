@@ -16,7 +16,7 @@ function BottomFooter() {
       <motion.div
         initial={isLargeScreen ? { x: 0, opacity: 1 } : { x: -50, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        transition={{ type: "spring", duration: 0.5, delay: 0.1, damping: 10 }}
+        transition={{ duration: 0.5 }}
         viewport={{ once: false }}
         className="mt-8 flex w-full items-center justify-center space-x-4 md:justify-end"
       >
@@ -35,7 +35,7 @@ function BottomFooter() {
       <motion.div
         initial={isLargeScreen ? { x: 0, opacity: 1 } : { x: -50, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        transition={{ type: "spring", duration: 0.5, delay: 0.1, damping: 10 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
         viewport={{ once: false }}
         className="pointer-events-none mt-2 w-full border-t border-foreground/20 pt-6 text-center text-sm text-accent-foreground"
       >

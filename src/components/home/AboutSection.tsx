@@ -2,13 +2,15 @@
 
 import { motion } from "framer-motion";
 import Avatar from "@/icons/Avatar";
-import Link from "next/link";
+import { AboutHeading } from "@/components/home/constant";
+import { useRouter } from "next/navigation";
 
 export default function AboutSection() {
+  const router = useRouter();
   return (
     <section
       id="about"
-      className="mx-auto flex max-w-3xl flex-col items-center justify-center gap-6 px-0 py-12 text-center max-sm:font-mono md:px-6"
+      className="mx-auto flex max-w-3xl flex-col items-center justify-center gap-6 px-0 py-12 text-center md:px-6"
     >
       {/* Avatar with pop-in effect */}
       <motion.div
@@ -28,7 +30,7 @@ export default function AboutSection() {
         transition={{ type: "spring", duration: 0.5, delay: 0.1, damping: 10 }}
         viewport={{ once: false }}
       >
-        ABOUT ME
+        {AboutHeading}
       </motion.h2>
 
       {/* Paragraphs slide from left */}
@@ -39,7 +41,7 @@ export default function AboutSection() {
       ].map((text, index) => (
         <motion.p
           key={index}
-          className="text-left text-lg text-muted-foreground"
+          className="text-left text-lg text-muted-foreground max-sm:text-center"
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
@@ -53,6 +55,8 @@ export default function AboutSection() {
       <motion.div
         initial={{ opacity: 0, y: 20, scale: 0.6 }}
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
+        whileTap={{ scale: 0.9 }}
+        whileHover={{ scale: 1.1 }}
         transition={{
           type: "spring",
           stiffness: 200,
@@ -61,14 +65,14 @@ export default function AboutSection() {
         viewport={{ once: false }}
         className="mt-5"
       >
-        <Link
-          href="/about"
+        <motion.button
+          onClick={() => router.push("/about")}
           rel="noopener noreferrer"
           aria-label="Learn more about Nikhil Kumar – MERN Developer"
-          className="rounded-full bg-amber-500 px-4 py-3 text-white transition-all duration-300 hover:scale-105"
+          className="rounded-full bg-amber-500 px-3 py-2 text-white transition-all duration-300 hover:scale-105"
         >
           Read more
-        </Link>
+        </motion.button>
       </motion.div>
     </section>
   );

@@ -74,7 +74,7 @@ export const projects: Project[] = [
     description:
       "A modern, SEO-optimized developer portfolio built using Next.js, Tailwind CSS, and Framer Motion with high Lighthouse scores.",
     image:
-      "https://images.unsplash.com/photo-1739611216842-05e54af86ec7?q=80&w=2059&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/projects/Portfolio.png",
   },
   {
     title: "Crypto Classic",

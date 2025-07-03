@@ -116,7 +116,7 @@ export const contacts: Contact[] = [
   {
     heading: "Phone",
     subheading: "+91 821-9901-263",
-    link: "tell:+918219901263",
+    link: "tel:+918219901263",
     icon: <Phone className="size-5" />,
   },
   {

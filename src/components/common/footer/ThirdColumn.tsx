@@ -1,5 +1,6 @@
 "use client";
 
+import type { SocialLinksItem } from "@/components/common/footer/constant";
 import { FooterData, SocialLinks } from "@/components/common/footer/constant";
 import StartConvoButton from "@/components/common/StartConversationButton";
 import useMediaQuery from "@/utils/useMediaQuery";
@@ -22,7 +23,7 @@ function ThirdColumn() {
         {FooterData.SecondParagraph}
       </p>
       <div className="my-4 flex space-x-4 text-muted-foreground ">
-        {SocialLinks.map(({ href, label, icon: Icon }) => (
+        {SocialLinks.map(({ href, label, icon: Icon }: SocialLinksItem) => (
           <Link
             key={label}
             rel="noopener noreferrer"
@@ -31,7 +32,7 @@ function ThirdColumn() {
             className="text-xl hover:text-foreground dark:hover:text-amber-300"
             aria-label={label}
           >
-            <Icon />
+            {Icon}
           </Link>
         ))}
       </div>

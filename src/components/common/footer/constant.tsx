@@ -1,6 +1,7 @@
-import { Github } from "@/icons/Github";
+import { Github } from "@/icons";
 import Linkedin from "@/icons/Linkedin";
 import Mail from "@/icons/Mail";
+import type { ReactElement } from "react";
 
 export const FooterData = {
   FirstHeading: "Nikhil Kumar",
@@ -15,15 +16,27 @@ export const FooterData = {
 export type SocialLinksItem = {
   href: string;
   label: string;
-  icon: React.FC;
+  icon: ReactElement;
 };
 
 type Social = SocialLinksItem[];
 
 export const SocialLinks: Social = [
-  { href: "https://www.linkedin.com/in/reachnik/", label: "LinkedIn", icon: Linkedin },
-  { href: "https://www.github.com/10nikhil01", label: "Github", icon: Github },
-  { href: "mailto:nikhilcreationshere@gmail.com", label: "Mail", icon: Mail },
+  {
+    href: "https://www.linkedin.com/in/reachnik/",
+    label: "LinkedIn",
+    icon: <Linkedin className="size-6" />,
+  },
+  {
+    href: "https://www.github.com/10nikhil01",
+    label: "Github",
+    icon: <Github className="size-6" />,
+  },
+  {
+    href: "mailto:nikhilcreationshere@gmail.com",
+    label: "Mail",
+    icon: <Mail className="size-6" />,
+  },
 ];
 
 export type FooterLinkItem = {

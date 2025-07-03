@@ -21,3 +21,4 @@ export * from "@/icons/Typescript";
 export * from "@/icons/ReactJs";
 export * from "@/icons/SEO";
 export * from "@/icons/NodeJs";
+export * from "@/icons/Phone";

@@ -18,6 +18,9 @@ import {
   TypeScript,
   Vercel,
 } from "@/icons";
+import Linkedin from "@/icons/Linkedin";
+import Mail from "@/icons/Mail";
+import Phone from "@/icons/Phone";
 
 import type { ReactElement } from "react";
 
@@ -31,6 +34,12 @@ export interface Project {
   link: string;
   description: string;
   image: string;
+}
+export interface Contact {
+  heading: string;
+  subheading: string;
+  link: string;
+  icon: ReactElement;
 }
 
 export const AboutHeading: string = "ABOUT ME";
@@ -88,5 +97,38 @@ export const projects: Project[] = [
     description:
       "A markdown-based blogging platform with static generation, RSS support, and syntax highlighting using MDX.",
     image: "/projects/GithubSearchUser.png",
+  },
+];
+
+export const ContactHeading = "Contact Me";
+export const ChipHeading = "Get In Touch";
+export const ContactSubHeading = "Let's Discuss Some Project";
+export const ContactLeftPara =
+  "I'd love to hear about your project and how I can help. Feel free to reach out through any of the following contact methods or by using the form.";
+
+export const contacts: Contact[] = [
+  {
+    heading: "Email",
+    subheading: "nikhilcreationshere@gmail.com",
+    link: "mailto:nikhilcreationshere@gmail.com",
+    icon: <Mail className="size-5" />,
+  },
+  {
+    heading: "Phone",
+    subheading: "+91 821-9901-263",
+    link: "tell:+918219901263",
+    icon: <Phone className="size-5" />,
+  },
+  {
+    heading: "LinkedIn",
+    subheading: "linkedin.com/in/reachnik",
+    link: "http://www.linkedin.com/in/reachnik",
+    icon: <Linkedin className="size-5" />,
+  },
+  {
+    heading: "GitHub",
+    subheading: "github.com/10Nikhil01",
+    link: "https://github.com/10Nikhil01",
+    icon: <Github className="size-5" />,
   },
 ];

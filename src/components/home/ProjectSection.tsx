@@ -54,7 +54,7 @@ export default function ProjectsSection() {
               className="flex h-full flex-col items-start justify-between border-0 text-left"
             >
               <CardHeader className="p-0 pb-2">
-                <div className="flex items-center justify-center overflow-hidden rounded-t-xl bg-slate-900 md:min-h-60">
+                <div className="flex items-center justify-center overflow-hidden rounded-t-xl bg-slate-900 md:min-h-[172px]">
                   <Image
                     src={project.image}
                     alt={project.title}
